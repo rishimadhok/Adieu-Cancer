@@ -1,0 +1,205 @@
+
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="{% static 'blogs/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blogs/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blogs/css/style.css' %}">
+    
+    <style>
+    .bg-color{
+	background-color: RGBA(13, 70, 83, 0.78);
+	min-height: 100px;
+	}
+
+	#service{
+		min-height: 560px;
+		background-color: #e6ecff;
+	}
+	
+  .card{
+    min-height:250px;
+    background-color: white;
+    width: 1000px;
+  }
+	.card img{
+		height:250px;
+		width:230px;
+		margin-left: 0px;
+	}
+    </style>
+
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section>
+		<div class="bg-color">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+			  	<div class="col-md-12">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				       <a class="navbar-brand" href="/AdieuCancer/" style="font-size:40px;">AdieuCancer</a>
+				    </div>
+				    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li class=""><a href="/AdieuCancer/">Home</a></li>
+				        <li class=""><a href="/about/">About Us</a></li>
+				        <li class=""><a href="/cancer/">Cancer A-Z</a></li>
+				        <li class=""><a href="/cancerpred/">Cancer Predictor</a></li>
+				        <li class=""><a href="https://www.practo.com/">Find a Doctor</a></li>
+				        <li class=""><a href="http://www.netmeds.com/">Medicines</a></li>
+				        <li class="active"><a href="/blogs/">Blog</a></li>
+				        <li class=""><a href="/contact/">Contact Us</a></li>
+				      </ul>
+				    </div>
+				</div>
+				</div>
+			  </div>
+			</nav>
+			
+		</div>
+	</section>
+	<!--/ banner-->
+	
+	<!--about us-->
+	<section id="service" class="section-padding">
+		<div class="container">
+			<h2 class="ser-title">Blogs</h2>
+					<hr class="botm-line">
+
+<div class="row">
+	
+    <div class="col card">
+      <div class="col-sm-3 col-md-3">
+      <img src="{% static 'blogs/img/blog/danielle-duran.jpg' %}" alt="brain-cancer">
+    </div>
+    <div class="col-sm-4 col-md-9">
+      <div class="caption">
+        <h3>Danielle: Liver Cancer</h3>
+        <div class="writeup">
+        <p>It took me nearly two years and 20 doctors to learn that I had liver cancer at the age of 28.  With no risk factors, nothing could have been further from my mind – or my doctor’s – when I went for a medical workup prior to having a liposuction procedure. “I am constantly inspired by my friends and their families, many of whom have taught me that there is dignity in suffering and beauty in death.”</p>
+    	</div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="col card">
+      <div class="col-sm-3 col-md-3">
+      <img src="{% static 'blogs/img/blog/adriana-lymphoma.jpg' %}" alt="brain-cancer">
+    </div>
+    <div class="col-sm-4 col-md-9">
+      <div class="caption">
+        <h3>Adriana: Non-Hodgkin Lymphoma</h3>
+        <div class="writeup">
+        <p>Adriana could hardly believe she was saying those words to her children. When she walked out of the doctor’s room after hearing her diagnosis of Non-Hodgkin lymphoma, she was totally unprepared. Yet Adriana made sure that she tried to keep smiling during her seven year journey to be cancer free.</p>
+       </div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="col card">
+      <div class="col-sm-3 col-md-3">
+      <img src="{% static 'blogs/img/blog/kathleen-lung.jpg' %}" alt="brain-cancer">
+    </div>
+    <div class="col-sm-4 col-md-9">
+      <div class="caption">
+        <h3>Kathleen Houlihan: Lung Cancer</h3>
+        <div class="writeup">
+        <p>I am blessed to have had a complete recovery from both of my lung cancers, due in part, I believe, to the reasonably healthy lifestyle I try to follow. Encouraged by my team at CTCA, I eat a mostly plant-based, mostly organic diet with an emphasis on vegetables. I typically make veggie smoothies twice a day. And I try to stay active, walking dogs, going on hikes with Holt and exercising regularly.</p>
+      </div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  
+  
+</div>
+
+
+</div>
+	</section>
+	<!--/ about us-->
+	
+	<!--footer-->
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">About Us</h4>
+							</div>
+							<div class="info-sec">
+								<p>We're on a mission to free the world from cancer. Until we do, we'll be funding and conducting research, sharing expert information, supporting patients, and spreading the word about prevention.</p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Quick Links</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+								<li><a href="/AdieuCancer/"><i class="fa fa-circle"></i>Home</a></li>
+								<li><a href="/about/"><i class="fa fa-circle"></i>About Us</a></li>
+								<li><a href="/cancer/"><i class="fa fa-circle"></i>Cancer A-Z</a></li>
+								<li><a href="/contact/"><i class="fa fa-circle"></i>Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Follow us</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="social-icon">
+								<li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+								<li class="bgred"><i class="fa fa-google-plus"></i></li>
+								<li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+								<li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						© Copyright AdieuCancer 2017. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--/ footer-->
+    
+    <script src="{% static 'blogs/js/jquery.min.js' %}"></script>
+    <script src="{% static 'blogs/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'blogs/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'blogs/js/custom.js' %}"></script>
+    <script src="{% static 'blogs/contactform/contactform.js' %}"></script>
+    
+  </body>
+</html>
