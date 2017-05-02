@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="{% static 'about_us/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'about_us/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'about_us/css/style.css' %}">
+
+    <style>
+
+    .bg-color{
+	background-color: RGBA(13, 70, 83, 0.78);
+	min-height: 100px;
+	}
+
+	body{
+
+		background-color: #e6ecff;
+	}
+
+	#doctor-team{
+		margin-top: 0px;
+	}
+
+	.thumbnail img{
+		height: 450px;
+		width: 350px;
+	}
+
+
+    </style>
+
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section>
+		<div class="bg-color">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+			  	<div class="col-md-12">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="/AdieuCancer/" style="font-size:40px;">AdieuCancer</a>
+				    </div>
+				    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li class=""><a href="/AdieuCancer/">Home</a></li>
+				        <li class="active"><a href="/about/">About Us</a></li>
+				        <li class=""><a href="/cancer/">Cancer A-Z</a></li>
+				        <li class=""><a href="/cancerpred/">Cancer Predictor</a></li>
+				        <li class=""><a href="https://www.practo.com/">Find a Doctor</a></li>
+				        <li class=""><a href="http://www.netmeds.com/">Medicines</a></li>
+				        <li class=""><a href="/blogs/">Blog</a></li>
+				        <li class=""><a href="/contact/">Contact Us</a></li>
+				      </ul>
+				    </div>
+				</div>
+			  </div>
+			</nav>
+
+		</div>
+	</section>
+	<!--/ banner-->
+
+	<!--about us-->
+	<section id="service" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-sm-4">
+					<h2 class="ser-title">About Us</h2>
+					<hr class="botm-line">
+
+					<p>
+						We're on a mission to free the world from cancer. Until we do, we'll be funding and conducting research, sharing expert information, supporting patients, and spreading the word about prevention. All so you can live longer and better. While most people know us for our research, we do so much more. We attack cancer from every possible angle.
+					</p>
+
+					<p>
+						We promote healthy lifestyles to help you prevent cancer. We research cancer and its causes to find more answers and better treatments. We have even made a unique, one of its kind cancer predictor, which is quite accurate (upto 99%) for all of you so that you can, at your convenience determine whether your cancer is benign and malignant within seconds.
+					</p>
+
+					<p>
+						We fight for lifesaving policy changes. We provide everything from emotional support to the latest cancer information for those who have been touched by cancer. And we do it all 24 hours a day, 7 days a week.
+					</p>
+
+					<p>
+						Join us, and together we can make a difference in today’s workplace while fighting cancer and saving lives.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--/ about us-->
+
+	<section id="doctor-team" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title">Our Team</h2>
+					<hr class="botm-line">
+				</div>
+				<div class="col-md-4 col-sm-3 col-xs-6">
+			      <div class="thumbnail">
+
+			      	<img src="{% static 'about_us/img/rishi.jpg' %}" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Rishi Madhok</h3>
+			          <p>Developer</p>
+			          <p>Computer Science and Engineering, DTU</p>
+			          <p>rishimadhok96@gmail.com</p>
+			          <ul class="list-inline">
+			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-2">
+			    </div>
+			    <div class="col-md-4 col-sm-3 col-xs-6">
+			      <div class="thumbnail">
+			      	<img src="{% static 'about_us/img/shweta.jpg' %}" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Shweta Garg</h3>
+			          <p>Developer</p>
+			          <p>Computer Science and Engineering, DTU</p>
+			          <p>shwetagarg2607@gmail.com</p>
+			          <ul class="list-inline">
+			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--footer-->
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">About Us</h4>
+							</div>
+							<div class="info-sec">
+								<p>We're on a mission to free the world from cancer. Until we do, we'll be funding and conducting research, sharing expert information, supporting patients, and spreading the word about prevention.</p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Quick Links</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+								<li><a href="/AdieuCancer/"><i class="fa fa-circle"></i>Home</a></li>
+								<li><a href="/about/"><i class="fa fa-circle"></i>About Us</a></li>
+								<li><a href="/cancer/"><i class="fa fa-circle"></i>Cancer A-Z</a></li>
+								<li><a href="/contact/"><i class="fa fa-circle"></i>Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Follow us</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="social-icon">
+								<li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+								<li class="bgred"><i class="fa fa-google-plus"></i></li>
+								<li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+								<li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						© Copyright AdieuCancer 2017. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--/ footer-->
+
+    <script src="{% static 'about_us/js/jquery.min.js' %}"></script>
+    <script src="{% static 'about_us/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'about_us/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'about_us/js/custom.js' %}"></script>
+    <script src="{% static 'about_us/contactform/contactform.js' %}"></script>
+
+  </body>
+</html>
