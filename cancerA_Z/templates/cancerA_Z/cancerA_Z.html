@@ -1,0 +1,272 @@
+
+
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cancer A-Z</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="{% static 'cancerA_Z/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cancerA_Z/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cancerA_Z/css/style.css' %}">
+    
+    <style>
+    .bg-color{
+	background-color: RGBA(13, 70, 83, 0.78);
+	min-height: 100px;
+	}
+
+	#service{
+		min-height: 560px;
+		background-color: #e6ecff;
+	}
+	.writeup{
+		min-height:160px;
+	}
+	.thumbnail img{
+		height:200px;
+		width:300px;
+	}
+    </style>
+
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section>
+		<div class="bg-color">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+			  	<div class="col-md-12">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				       <a class="navbar-brand" href="/AdieuCancer/" style="font-size:40px;">AdieuCancer</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class=""><a href="/AdieuCancer/">Home</a></li>
+                <li class=""><a href="/about/">About Us</a></li>
+                <li class="active"><a href="/cancer/">Cancer A-Z</a></li>
+                <li class=""><a href="/cancerpred/">Cancer Predictor</a></li>
+                <li class=""><a href="https://www.practo.com/">Find a Doctor</a></li>
+                <li class=""><a href="http://www.netmeds.com/">Medicines</a></li>
+                <li class=""><a href="/blogs/">Blog</a></li>
+                <li class=""><a href="/contact/">Contact Us</a></li>
+              </ul>
+            </div>
+        </div>
+				</div>
+			  </div>
+			</nav>
+			
+		</div>
+	</section>
+	<!--/ banner-->
+	
+	<!--about us-->
+	<section id="service" class="section-padding">
+		<div class="container">
+			<h2 class="ser-title">Cancer A-Z</h2>
+					<hr class="botm-line">
+
+<div class="col">
+	<div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'cancerA_Z/img/types/brain.jpg' %}" alt="brain-cancer">
+      <div class="caption">
+        <h3>Brain Cancer</h3>
+        <div class="writeup">
+        <p>A brain tumor or intracranial neoplasm occurs when abnormal cells form within the brain. Symptoms may include headaches, seizures, problem with vision, vomiting, and mental changes. More specific problems may include difficulty in walking, speaking, and with sensation.</p>
+    	</div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'cancerA_Z/img/types/breast.jpg' %}" alt="breast-cancer">
+      <div class="caption">
+        <h3>Breast Cancer</h3>
+        <div class="writeup">
+        <p>Breast cancer is cancer that develops from breast tissue. Signs of breast cancer may include a lump in the breast, a change in breast shape, dimpling of the skin, fluid coming from the nipple, or a red scaly patch of skin.</p>
+    	</div>
+        <p><a href="/breastcan/" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'cancerA_Z/img/types/leukemia.jpg' %}" alt="leukemia">
+      <div class="caption">
+        <h3>Leukemia</h3>
+        <div class="writeup">
+        <p>Leukemia, also spelled leukaemia, is a group of cancers that usually begin in the bone marrow and result in high numbers of abnormal white blood cells. Symptoms may include bleeding and bruising problems, feeling tired, fever, and an increased risk of infections.</p>
+    	</div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="col">
+	<div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'cancerA_Z/img/types/liver.jpg' %}" alt="liver-cancer">
+      <div class="caption">
+        <h3>Liver Cancer</h3>
+        <div class="writeup">
+        <p>Liver cancer, also known as hepatic cancer is a cancer that starts in the liver. Symptoms of liver cancer may include a lump or pain in the right side below the rib cage, swelling of the abdomen, yellowish skin, easy bruising, weight loss, and weakness.</p>
+    	</div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+  
+<div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'cancerA_Z/img/types/lung.jpg' %}" alt="lung-cancer">
+      <div class="caption">
+        <h3>Lung Cancer</h3>
+        <div class="writeup">
+        <p>Lung cancer, also known as lung carcinoma, is a malignant lung tumor characterized by uncontrolled cell growth in tissues of the lung. Common symptoms are coughing, weight loss, shortness of breath, and chest pains.</p>
+    	</div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'cancerA_Z/img/types/ovarian.jpg' %}" alt="ovarian-cancer">
+      <div class="caption">
+        <h3>Ovarian Cancer</h3>
+        <div class="writeup">
+        <p>Ovarian cancer is a cancer that forms in an ovary. When this process begins, there may be no or only vague symptoms. They become more noticeable as the cancer progresses. These may include bloating, pelvic pain, abdominal swelling, and loss of appetite, among others.</p>
+    	</div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+<div class="col">
+   <div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'cancerA_Z/img/types/prostate.jpg' %}" alt="prostate-cancer">
+      <div class="caption">
+        <h3>Prostate Cancer</h3>
+        <div class="writeup">
+        <p>Prostate cancer, also known as carcinoma of the prostate, is the development of cancer in the prostate, a gland in the male reproductive system. It can lead to difficulty in urinating, blood in the urine, or pain in the pelvis, back or when urinating.</p>
+    	</div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+
+<div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'cancerA_Z/img/types/skin.jpg' %}" alt="skin-cancer">
+      <div class="caption">
+        <h3>Skin Cancer</h3>
+        <div class="writeup">
+        <p>Skin cancers are cancers that arise from the skin. They are due to the development of abnormal cells that have the ability to spread to other parts of the body. Signs include a mole that has changed in size, shape, color, has irregular edges, has more than one color, is itchy or bleeds.</p>
+    	</div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'cancerA_Z/img/types/thyroid.jpg' %}" alt="thyroid-cancer">
+      <div class="caption">
+        <h3>Thyroid Cancer</h3>
+        <div class="writeup">
+        <p>Thyroid cancer is a cancer originating from follicular or parafollicular thyroid cells. First symptom of thyroid cancer is a nodule in the thyroid region of the neck. Later symptoms include pain in the anterior region of the neck, changes in voice due to involvement of the laryngeal nerve.</p>
+    	</div>
+        <p><a href="#" class="btn btn-primary" role="button">Click to know more <i class="fa fa-arrow-right"></i></a></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+</div>
+	</section>
+	<!--/ about us-->
+	
+	<!--footer-->
+	<footer id="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 marb20">
+              <div class="ftr-tle">
+                <h4 class="white no-padding">About Us</h4>
+              </div>
+              <div class="info-sec">
+                <p>We're on a mission to free the world from cancer. Until we do, we'll be funding and conducting research, sharing expert information, supporting patients, and spreading the word about prevention.</p>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Quick Links</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info">
+                <li><a href="/AdieuCancer/"><i class="fa fa-circle"></i>Home</a></li>
+                <li><a href="/about/"><i class="fa fa-circle"></i>About Us</a></li>
+                <li><a href="/cancer/"><i class="fa fa-circle"></i>Cancer A-Z</a></li>
+                <li><a href="/contact/"><i class="fa fa-circle"></i>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Follow us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="social-icon">
+                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            © Copyright AdieuCancer 2017. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+	<!--/ footer-->
+    
+    <script src="{% static 'cancerA_Z/js/jquery.min.js' %}"></script>
+    <script src="{% static 'cancerA_Z/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'cancerA_Z/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'cancerA_Z/js/custom.js' %}"></script>
+    <script src="{% static 'cancerA_Z/contactform/contactform.js' %}"></script>
+    
+  </body>
+</html>
