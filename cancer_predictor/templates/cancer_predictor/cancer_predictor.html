@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cancer Predictor</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="{% static 'cancer_predictor/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cancer_predictor/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cancer_predictor/css/style.css' %}">
+
+    <style>
+
+    img{
+    	height:400px;
+    	width:1000px;
+    	margin-bottom: 20px;
+    }
+
+
+
+    .bg-color{
+	background-color: RGBA(13, 70, 83, 0.78);
+	min-height: 100px;
+	}
+
+	#service{
+		min-height: 560px;
+		background-color: #e6ecff;
+	}
+    </style>
+
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section>
+		<div class="bg-color">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+			  	<div class="col-md-12">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="/AdieuCancer/" style="font-size:40px;">AdieuCancer</a>
+				    </div>
+				    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li class=""><a href="/AdieuCancer/">Home</a></li>
+				        <li class=""><a href="/about/">About Us</a></li>
+				        <li class=""><a href="/cancer/">Cancer A-Z</a></li>
+				        <li class="active"><a href="/cancerpred/">Cancer Predictor</a></li>
+				        <li class=""><a href="https://www.practo.com/">Find a Doctor</a></li>
+				        <li class=""><a href="http://www.netmeds.com/">Medicines</a></li>
+				        <li class=""><a href="/blogs/">Blog</a></li>
+				        <li class=""><a href="/contact/">Contact Us</a></li>
+				      </ul>
+				    </div>
+				</div>
+			  </div>
+			</nav>
+
+		</div>
+	</section>
+	<!--/ banner-->
+
+	<!--about us-->
+	<section id="service" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-4">
+
+					<h2 class="ser-title">Breast Cancer Predictor</h2>
+					<hr class="botm-line">
+
+
+			<div class="row">
+
+				<div class="col-md-8 col-sm-8 marb20">
+					<div class="contact-info">
+							<h3 class="cnt-ttl">Fill The Form To Predict Breast Cancer :</h3>
+							<h5>All Values Between 1-10</h5>
+							<div class="space"></div>
+                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="errormessage">Value Between 1-10</div>
+							<form action="{% url 'prediction' %}" method="post" role="form" class="contactForm">
+                {% csrf_token %}
+                {{myregistrationform.as_p}}
+
+                <input type="submit" value="Test" style="height:40px; width:120px; color:black">
+
+							</form>
+					</div>
+				</div>
+			</div>
+
+
+				</div>
+
+
+
+			</div>
+		</div>
+	</section>
+	<!--/ about us-->
+
+	<!--footer-->
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">About Us</h4>
+							</div>
+							<div class="info-sec">
+								<p>We're on a mission to free the world from cancer. Until we do, we'll be funding and conducting research, sharing expert information, supporting patients, and spreading the word about prevention.</p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Quick Links</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+								<li><a href="/AdieuCancer/"><i class="fa fa-circle"></i>Home</a></li>
+								<li><a href="/about/"><i class="fa fa-circle"></i>About Us</a></li>
+								<li><a href="/cancer/"><i class="fa fa-circle"></i>Cancer A-Z</a></li>
+								<li><a href="/contact/"><i class="fa fa-circle"></i>Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Follow us</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="social-icon">
+								<li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+								<li class="bgred"><i class="fa fa-google-plus"></i></li>
+								<li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+								<li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						© Copyright AdieuCancer 2017. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--/ footer-->
+
+
+    <script src="{% static 'cancer_predictor/js/jquery.min.js' %}"></script>
+    <script src="{% static 'cancer_predictor/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'cancer_predictor/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'cancer_predictor/js/custom.js' %}"></script>
+
+  </body>
+</html>
