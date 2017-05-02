@@ -1,0 +1,353 @@
+
+
+{% load staticfiles %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adieu Cancer</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="{% static 'cover/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cover/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cover/css/style.css' %}">
+
+
+    <style>
+
+
+    .banner-logo{
+    	font-size: 40px;
+    }
+
+    #donate{
+    	background-image: url('{% static 'cover/img/donate.jpg' %}');
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	width:70%;
+    	height:380px;
+    	margin-right: 2%;
+        }
+     #cta-2{
+     	height: 380px;
+     	background-color: #000d1a;
+     }
+
+     .team-img{
+     	height: 300px;
+     	width:150px;
+     }
+
+
+
+    </style>
+
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section id="banner" class="banner">
+		<div class="bg-color">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+			  	<div class="col-md-12">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="/AdieuCancer/">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+
+				      <a class="navbar-brand" href="/AdieuCancer/" style="font-size:40px;">AdieuCancer</a>
+				    </div>
+				    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="/AdieuCancer/">Home</a></li>
+				        <li class=""><a href="/about/">About Us</a></li>
+				        <li class=""><a href="/cancer/">Cancer A-Z</a></li>
+				        <li class=""><a href="/cancerpred/">Cancer Predictor</a></li>
+				        <li class=""><a href="https://www.practo.com/">Find a Doctor</a></li>
+				        <li class=""><a href="http://www.netmeds.com/">Medicines</a></li>
+				        <li class=""><a href="/blogs/">Blog</a></li>
+				        <li class=""><a href="/contact/">Contact Us</a></li>
+				      </ul>
+				    </div>
+				</div>
+			  </div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="banner-info">
+						<div class="banner-logo text-center">
+							<h1 class="white">AdieuCancer</h1>
+						</div>
+						<div class="banner-text text-center">
+							<h1 class="white">Healthcare at your desk!</h1>
+							<p>Get a detailed informaion about the various types of cancer, their symptoms and treatments.</p>
+							<a href="/cancer/" class="btn btn-appoint">Know More</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ banner-->
+	<!--service-->
+	<section id="service" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<h2 class="ser-title">Our Services</h2>
+					<hr class="botm-line">
+					<p>We're on a mission to free the world from cancer. Until we do, we'll be funding and conducting research, sharing expert information, supporting patients, and spreading the word about prevention.</p>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-stethoscope"></i>
+						</div>
+						<div class="icon-info">
+							<h4>24 Hour Support</h4>
+							<p>Have any queries about the Cancer treatment? Get information anytime and anywhere. Contact us on our number. </p>
+						</div>
+					</div>
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-ambulance"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Emergency Services</h4>
+							<p>We provide 24 hours emergency services to the patients. In case of any emergency, get in touch with our team.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-user-md"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Medical Counseling</h4>
+							<p>Get in touch with our expert team of doctors. They are trained to help you in any circumstance. Find a doctor from the panel, that best suits you.</p>
+						</div>
+					</div>
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-medkit"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Premium Healthcare</h4>
+							<p>Healthcare services such as Hospitals, Medicines, Doctors Information can be found all in one place.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ service-->
+
+	<!--doctor team-->
+	<section id="doctor-team" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title">Meet Our Doctors</h2>
+					<hr class="botm-line">
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail">
+			      	<img src="{% static 'cover/img/doctor1.jpg' %}" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Jessica Wally</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail">
+			      	<img src="{% static 'cover/img/doctor2.jpg' %}" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Iai Donas</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail">
+			      	<img src="{% static 'cover/img/doctor3.jpg' %}" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Amanda Denyl</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+			      <div class="thumbnail">
+			      	<img src="{% static 'cover/img/doctor4.jpg' %}" alt="..." class="team-img">
+			        <div class="caption">
+			          <h3>Jason Davis</h3>
+			          <p>Doctor</p>
+			          <ul class="list-inline">
+			            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			          </ul>
+			        </div>
+			      </div>
+			    </div>
+			</div>
+		</div>
+	</section>
+	<!--/ doctor team-->
+	<!--testimonial-->
+	<section id="testimonial" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title">see what patients are saying?</h2>
+					<hr class="botm-line">
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="testi-details">
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="testi-info">
+						<!-- User Image -->
+						<a href="#"><img src="{% static 'cover/img/thumb.png' %}" alt="" class="img-responsive"></a>
+						<!-- User Name -->
+						<h3>Alex<span>Texas</span></h3>
+					</div>
+				</div>
+			    <div class="col-md-4 col-sm-4">
+					<div class="testi-details">
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="testi-info">
+						<!-- User Image -->
+						<a href="#"><img src="{% static 'cover/img/thumb.png' %}" alt="" class="img-responsive"></a>
+						<!-- User Name -->
+						<h3>Alex<span>Texas</span></h3>
+					</div>
+				</div>
+			    <div class="col-md-4 col-sm-4">
+					<div class="testi-details">
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="testi-info">
+						<!-- User Image -->
+						<a href="#"><img src="{% static 'cover/img/thumb.png' %}" alt="" class="img-responsive"></a>
+						<!-- User Name -->
+						<h3>Alex<span>Texas</span></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ testimonial-->
+
+	<!--cta 2-->
+	<section id="cta-2">
+			<div class="row">
+				<div class="col-md-8" id="donate">
+				</div>
+				<div class="text-center col-md-3 col-sm-3">
+	              <h2 class="section-title white lg-line" style="margin-top:20px;">Help save <br>someone's life</h2>
+
+	            <br><br>
+
+	            	Thousands of Cancer patients are dying due to lack of proper resources and treatment as they can not afford it. A small contribution by you can help save a life.
+
+	            	<br><br>
+	            	<a href="#" class="btn btn-appoint"><h4>Donate Now</h4></a>
+
+	        </div>
+		</div>
+	</section>
+	<!--cta-->
+
+
+
+
+	<!--footer-->
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">About Us</h4>
+							</div>
+							<div class="info-sec">
+								<p>We're on a mission to free the world from cancer. Until we do, we'll be funding and conducting research, sharing expert information, supporting patients, and spreading the word about prevention.</p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Quick Links</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+								<li><a href="/AdieuCancer/"><i class="fa fa-circle"></i>Home</a></li>
+								<li><a href="/about/"><i class="fa fa-circle"></i>About Us</a></li>
+								<li><a href="/cancer/"><i class="fa fa-circle"></i>Cancer A-Z</a></li>
+								<li><a href="/contact/"><i class="fa fa-circle"></i>Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Follow us</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="social-icon">
+								<li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+								<li class="bgred"><i class="fa fa-google-plus"></i></li>
+								<li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+								<li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						© Copyright AdieuCancer 2017. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--/ footer-->
+
+    <script src="{% static 'cover/js/jquery.min.js' %}"></script>
+    <script src="{% static 'cover/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'cover/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'cover/js/custom.js' %}"></script>
+
+  </body>
+</html>
